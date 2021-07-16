@@ -10,11 +10,14 @@
 <html lang='en'>
     <head>
         <meta charset="utf-8">
-        <title>Template</title>
+        <title>Logan Inwood HW1</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="topbar">
+            <!--Code for the banner of the page.
+                Includes a Logo, a title, and
+                a navigation bar(that goes no where) -->
             <div class="logodiv">
                 <img src='img/test.png' alt='LI logo' class='logo'>
             </div>
@@ -23,7 +26,7 @@
             </div>
             <div class="navigationdiv">
                 <ul id="navigation">
-                    <li><a href="#" >Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Thoughts</a></li>
                     <li><a href="#">Opinions</a></li>
@@ -31,8 +34,11 @@
                 </ul>
             </div>
         </div>
+        <!-- Set up wrapper class to use as a CSS grid for site design -->
         <div class="wrapper">
             <div class="box box1">
+                <!--Top Left Box:
+                    Short paragraph about my experience with web design -->
                 <div  class="realtext">
                     <p>
                         I did small amounts of web development in high school when I first learned to program. 
@@ -50,6 +56,8 @@
                 </div>
             </div>
             <div class="box box2">
+                <!--Top Right Box: 
+                    Basic table implementation. All data grabbed from https://www.basketball-reference.com/ -->
                 <table class = "boxtable">
                     <tr>
                         <th>Player</th>
@@ -78,6 +86,10 @@
                 </table>
             </div>
             <div class="box box3">
+                <!--Bottom left box:
+                    List of cars that I have been researching and a picture of my favorite so far.
+                    Also uses CSS grids for layout.
+                    Picture of car sourced from firstpost.com  -->
                 <h2>Cars I've Been Looking Into</h2>
                 <div class="cardiv">
                     <ul id="carlist">
@@ -95,6 +107,8 @@
                     </div>
                 </div>
             </div>
+            <!--4x4 grid of divs that contain images located in the bottom right:
+                All images are sourced from unsplash.com.  -->
             <div class="box box4">
                 <img src='img/waterfall.webp' alt='Waterfall' class='boximg'>
             </div>
@@ -108,6 +122,7 @@
                 <img src='img/lake.webp' alt='Lake' class='boximg'>
             </div>
         </div>
+        <!-- Footer to publicly give credit to myself -->
         <div class="footer">
             <p>Copyright &copy; Logan Inwood 2021</p>
         </div>
