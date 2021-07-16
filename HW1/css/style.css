@@ -1,3 +1,4 @@
+/* Sets the default design for the website */
 body{
     background-color: #fffff7;
     color: rgba(0,0,0,.8);
@@ -5,11 +6,21 @@ body{
     min-width: 1200px;
 }
 
-.topbar div h1{
-    text-align: center;
-    color:#fffff7;
+/* Default behavior of links.
+   Links are all uppercase, no underlining, and change colors when hovered over. */
+a{
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: #fffff7;
+    text-transform: uppercase;
 }
 
+a:hover{
+    color:#dfc3c4;
+}
+
+
+/* Layout and design of banner. Uses grid to organize logo, title, and navigation bar */
 .topbar{
     display: grid;
     background-color: #1b2326;
@@ -18,52 +29,33 @@ body{
     grid-auto-rows: 80px;
 }
 
+/* Controls the page title design in banner */
+.topbar div h1{
+    text-align: center;
+    color:#fffff7;
+}
+
+/* Logo is set to the left side of the banner grid */
 .logodiv{
     padding: 3px;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
+/* Title is on the upper right side of the grid */
 .topbox{
     grid-column: 2/4;
     grid-row: 1;
 }
 
+/* Navigation is on the lower right side of grid */
 .navigationdiv{
     grid-column: 2/4;
     grid-row: 2;
 }
 
-.wrapper{
-    display: grid;
-    margin: .2em;
-    grid-gap: 5px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 150px;
-    margin: 0% 15% 1% 15%;
-}
-
-.wrapper div{
-    padding: 2%;
-}
-
-
-.wrapper div:nth-child(n+2){
-    background-color: #b49987;
-}
-
-.wrapper div:nth-child(1){
-    background-color: #dfc3c4;
-}
-
-.wrapper div:nth-child(n+4){
-    background-color: #dfc3c4;
-}
-
-.wrapper div:nth-child(n+4):hover{
-    padding: 0px;
-}
-
+/* Next two parts of code provide the design for an inline, well spaced navigation bar
+   that is centered in its grid area. . */
 #navigation{
     width: 100%;
     padding: 15px;
@@ -82,21 +74,49 @@ body{
     margin-bottom: 0px;
 }
 
-a{
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    color: #fffff7;
-    text-transform: uppercase;
+/* Grid layour for the main body of the website.
+   The grid is 4x4 with the top left being 2x2
+   the top right 2x2, the bottom left 2x2, 
+   and the bottom right consiting of four 1x1 blocks. */
+.wrapper{
+    display: grid;
+    margin: .2em;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    margin: 0% 15% 1% 15%;
 }
 
-a:hover{
-    color:#dfc3c4;
+/* Creates standard padding within main design blocks */
+.wrapper div{
+    padding: 2%;
+}
+
+/* Sets the background color for the top right and the bottom left divs */
+.wrapper div:nth-child(n+2){
+    background-color: #b49987;
+}
+
+/* Sets the background of the top left div*/
+.wrapper div:nth-child(1){
+    background-color: #dfc3c4;
+}
+
+/* Sets the background color for the four bottom right divs */
+.wrapper div:nth-child(n+4){
+    background-color: #dfc3c4;
+}
+
+/* This causes the bottom right images to fill their div upon hover. */
+.wrapper div:nth-child(n+4):hover{
+    padding: 0px;
 }
 
 .footer{
     text-align: center;
 }
 
+/* The four box{} parts of code degine the layout of the main body */
 .box1{
     grid-column: 1/3;
     grid-row: 1/3;
@@ -121,6 +141,23 @@ a:hover{
     object-fit:fill;
 }
 
+/* Top left div: 
+   Text will not overflow, and will instead cause scrollbar to appear. */
+.realtext{
+    height: 95%;
+    width: 96%;
+    object-fit:fill;
+    overflow: auto;
+    padding: 1%;
+}
+
+.realtext p{
+    margin: 0%;
+    font-size: 20px;
+}
+
+/* All boxtable settings create the design of the table in the top right div.
+   The table alternates colors by column and cells change color upon hover. */
 .boxtable{
     table-layout: fixed;
     width: 100%;
@@ -152,26 +189,14 @@ a:hover{
     background-color: #363835;
 }
 
-.realtext{
-    height: 95%;
-    width: 96%;
-    object-fit:fill;
-    overflow: auto;
-    background-color: red;
-    padding: 1%;
-}
-
-.realtext p{
-    margin: 0%;
-    font-size: 20px;
-}
-
+/* Header for bottom left div */
 .box3 h2{
     text-align: center;
     margin:  0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 
+/* Set up grid for bottom left div */
 .cardiv{
     display: grid;
     grid-gap: 5px;
@@ -179,6 +204,8 @@ a:hover{
     grid-auto-rows: 150px;
 }
 
+/* List of cars on the left, and picture of car on the right.
+   Remove bullets from list of cars. */
 #carlist{
     grid-column: 1/4;
     grid-row: 1/2;
@@ -202,11 +229,14 @@ a:hover{
     object-fit:fill;
 }
 
+/* Center smaller text caption beneath image */
 .caption{
     text-align: center;
     font-size: smaller;
 }
 
+/* Favorite car link will be different color, but 
+   still changes color upon hover. */
 a#favorite{
     color:#1b2326;
 }
