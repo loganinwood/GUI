@@ -61,20 +61,25 @@ nav a:hover {
 
 footer, #content {
 	background-color: white;
-	padding-left: 4%;
+	padding-left: 6%;
 	padding-bottom: 4%;
 }
 #content{
 	background-color: white;
 }
 
+#content > *{
+	padding-right: 4%;
+}
+
 #content img{
 	float: left;
-	margin-right: 5%;
+	margin-right: 2%;
 }
 
 #content ul{
 	list-style-position: inside;
+	list-style-image: url('marker.gif');
 }
 .resort{
 	color: SteelBlue;
@@ -101,8 +106,11 @@ dt {
 	color: #000033;
 }
 footer {
+	font-size: 80%;
 	background-color: white;
 	grid-column: 2/3;
 	font-family: Georgia, "Times New Roman", serif;
 	font-style:italic;
+	padding-bottom: 2%;
+	padding-top: 2%;
 }
