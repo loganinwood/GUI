@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <!--
     File: index.html
-    GUI Assignment:  Creating Your First Web Page
+    GUI Assignment:  Creating an Interactive Dynamic Table
     Logan Inwood UMass Lowell Computer Science, logan_inwood@student.uml.edu
     Copyright (c) 2021 by Logan Inwood.  All rights reserved.  May be freely copied or 
     excerpted for educational purposes with credit to the author.
-    updated by LI on July 14, 2021 at 6:00 PM
+    updated by LI on July 30, 2021 at 2:00 PM
 -->
 <html lang='en'>
     <head>
         <meta charset="utf-8">
-        <title>Template</title>
+        <title>HW3</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <!-- Layout of form entry. Follows format of:
+            Label
+            Text input
+            hidden error message -->
         <div id="form">
             <h3>Enter ranges for table</h3>
             <form name="numform">
@@ -32,6 +36,7 @@
                 <button type="button" id='submit'>Submit</button>
             </form> 
         </div>
+        <!-- Divider that will contain the generated table -->
         <div id="multtable">
         </div>
         <script type="text/javascript" src="scripts/tablegen.js"></script>

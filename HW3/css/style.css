@@ -1,3 +1,4 @@
+/* General style for whole site */
 body{
     background-color: #fffff7;
     color: rgba(0,0,0,.8);
@@ -5,6 +6,9 @@ body{
     min-width: 900px;
 }
 
+/*  Next 3 blocks style the form.
+    Form is centered with center text. 
+    Rounded border to look nicer */
 #form{
     background-color: lightgray;
     width: 500px;
@@ -22,9 +26,11 @@ body{
     color:red;
 }
 
+/*  Table has centered text.
+    Is centered in the page
+    Has a max width, and is scrollable.*/
 table{
-    margin: auto;
-    padding: 2em;
+    margin: 1% auto;
     text-align: center;
     height:500px; 
     max-width: 1500px;
@@ -32,12 +38,17 @@ table{
     display:block; 
 }
 
+/* Table data and headers have different background colors. */
 td{
     padding: 5px;
     background-color: lightgray;
 }
 
+/* Position, left, and top cause the headers to stick to the table when scrolling */
 th{
     padding: 5px;
     background-color: gray;
+    position: sticky;
+    left: 0;
+    top:0;
 }
