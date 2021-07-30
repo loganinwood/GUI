@@ -1,0 +1,43 @@
+body{
+    background-color: #fffff7;
+    color: rgba(0,0,0,.8);
+    margin:0px;
+    min-width: 900px;
+}
+
+#form{
+    background-color: lightgray;
+    width: 500px;
+    margin: 1% auto;
+    text-align: center;
+    padding: 1%;
+    border-radius: 10%;
+}
+
+#form form input{
+    width: 300px;
+}
+
+.error{
+    color:red;
+}
+
+table{
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+    height:500px; 
+    max-width: 1500px;
+    overflow:scroll; 
+    display:block; 
+}
+
+td{
+    padding: 5px;
+    background-color: lightgray;
+}
+
+th{
+    padding: 5px;
+    background-color: gray;
+}
