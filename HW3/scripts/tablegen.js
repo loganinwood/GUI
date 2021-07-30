@@ -9,10 +9,10 @@ function generate_table(){
     document.getElementById("rmaxerror").innerHTML = "";
     document.getElementById("rminerror").innerHTML = "";
     // Get Values entered
-    var cmin = document.getElementById("cmin").value;
-    var cmax = document.getElementById("cmax").value;
-    var rmin = document.getElementById("rmin").value;
-    var rmax = document.getElementById("rmax").value;
+    var cmin = Number(document.getElementById("cmin").value);
+    var cmax = Number(document.getElementById("cmax").value);
+    var rmin = Number(document.getElementById("rmin").value);
+    var rmax = Number(document.getElementById("rmax").value);
     var hasError = false;
     // Verify input and display error message if needed
     if (isNaN(cmin) || cmin > 250 || cmin < -250){
