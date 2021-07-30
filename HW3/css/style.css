@@ -29,8 +29,10 @@ body{
 /*  Table has centered text.
     Is centered in the page
     Has a max width, and is scrollable.*/
-table{
+#multtable{
     margin: 1% auto;
+}
+table{
     text-align: center;
     height:500px; 
     max-width: 1500px;
