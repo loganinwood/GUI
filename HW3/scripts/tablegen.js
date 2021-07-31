@@ -1,3 +1,11 @@
+/*
+    File: tablegen.js
+    GUI Assignment:  Creating an Interactive Dynamic Table
+    Logan Inwood UMass Lowell Computer Science, logan_inwood@student.uml.edu
+    Copyright (c) 2021 by Logan Inwood.  All rights reserved.  May be freely copied or 
+    excerpted for educational purposes with credit to the author.
+    updated by LI on July 31, 2021 at 5:00 PM
+    */
 // Listener for submission
 document.getElementById('submit').addEventListener("click", generate_table);
 
