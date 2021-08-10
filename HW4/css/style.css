@@ -1,0 +1,65 @@
+/* 
+    File: style.css
+    GUI Assignment:  Using the jQuery Plugin/UI with Your Dynamic Table
+    Logan Inwood UMass Lowell Computer Science, logan_inwood@student.uml.edu
+    Copyright (c) 2021 by Logan Inwood.  All rights reserved.  May be freely copied or 
+    excerpted for educational purposes with credit to the author.
+    updated by LI on August 9, 2021 at 5:00 PM
+*/
+/* General style for whole site */
+body{
+    background-color: #fffff7;
+    color: rgba(0,0,0,.8);
+    margin:0px;
+    min-width: 1000px;
+}
+
+/*  Next 3 blocks style the form.
+    Form is centered with center text. 
+    Rounded border to look nicer */
+#form{
+    background-color: lightgray;
+    width: 500px;
+    margin: 1% auto;
+    text-align: center;
+    padding: 1%;
+    border-radius: 10%;
+}
+
+#form form input{
+    width: 300px;
+}
+
+.error{
+    color:red;
+}
+
+/*  Table has centered text.
+    Is centered in the page
+    Has a max width, and is scrollable.*/
+#multtable{
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 500px;
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+/* Table data and headers have different background colors. */
+td{
+    padding: 5px;
+    background-color: lightgray;
+}
+
+/* Position, left, and top cause the headers to stick to the table when scrolling */
+th{
+    position: sticky;
+    padding: 5px;
+    background-color: gray;
+    left: 0;
+    top:0;
+}

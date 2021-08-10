@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+    File: index.html
+    GUI Assignment:  Using the jQuery Plugin/UI with Your Dynamic Table
+    Logan Inwood UMass Lowell Computer Science, logan_inwood@student.uml.edu
+    Copyright (c) 2021 by Logan Inwood.  All rights reserved.  May be freely copied or 
+    excerpted for educational purposes with credit to the author.
+    updated by LI on August 9, 2021 at 5:00 PM
+-->
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <title>HW4 Part 1</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Layout of form entry. Follows format of:
+            Label
+            Text input
+            hidden error message -->
+        <div id="form">
+            <h3>Enter ranges for table</h3>
+            <form id="numform" name="numform">
+                <label for="rmin">Row Min:</label><br>
+                <input id="rmin" name="rmin" ><br>
+                <p class="error" id='rminerror'></p>
+                <label for="rmax">Row Max:</label><br>
+                <input  id="rmax" name="rmax" ><br>
+                <p class="error" id='rmaxerror'></p>
+                <label for="cmin">Col Min</label><br>
+                <input  id="cmin" name="cmin" ><br>
+                <p class="error" id='cminerror'></p>
+                <label for="cmax">Col Max</label><br>
+                <input id="cmax" name="cmax" ><br>
+                <p class="error" id='cmaxerror'></p>
+                <button type="button" id='submit'>Submit</button>
+            </form> 
+        </div>
+        <!-- Divider that will contain the generated table -->
+        <div id="multtable">
+        </div>
+        <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+        <script src="scripts/validate.js"></script>
+        <script type="text/javascript" src="scripts/tablegen.js"></script>
+    </body>
+</html>
